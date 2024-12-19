@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": ["es5", "dom", "es6", "es2015"],
+      //"types": ["cypress", "node", "cypress-xpath", "cypress-axe-core"]
+      "types": ["cypress", "node", "cypress-xpath", "cypress-axe"]
+    },
+    "include": ["**/*.ts", "cypress/support/commands.js", "cypress/support/index.js", "dotenv"],
+     
+  }
