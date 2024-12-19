@@ -28,7 +28,7 @@ When("the user clciks on Buzz Tab", () => {
 Then("the Buzz Newsfeed page should appear", () => {
 
     cy.url().should('include',Constants.Buzz_Feed_URL)
-    cy.wait(3000)
+    cy.wait(5000)
 
 });
 
