@@ -21,11 +21,11 @@ export class LoginResource {
     //cy.visit(Cypress.env('test_url'))
     cy.wait(3000)
 
-    // cy.xpath(LoginLocators.inputUsername).type(Constants.USER_NAME, { force: true });
-    // cy.xpath(LoginLocators.inputPassword).type(Constants.PASSWORD, { force: true });
+    cy.xpath(LoginLocators.inputUsername).type(Constants.Username, { force: true });
+    cy.xpath(LoginLocators.inputPassword).type(Constants.Password, { force: true });
 
-    cy.xpath(LoginLocators.inputUsername).type(Cypress.env('username'), { force: true })
-     cy.xpath(LoginLocators.inputPassword).type(Cypress.env('password'), { force: true })
+    // cy.xpath(LoginLocators.inputUsername).type(Cypress.env('username'), { force: true })
+    //  cy.xpath(LoginLocators.inputPassword).type(Cypress.env('password'), { force: true })
 
 
     cy.xpath(LoginLocators.loginButton).click();
